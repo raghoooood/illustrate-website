@@ -30,7 +30,7 @@ const CompanyLogos = () => (
 
       <motion.div
         variants={fadeIn("up", "tween", 0.3, 1)}
-        className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center"
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center"
       >
         {companyLogos.map((logo, index) => (
           <motion.div
