@@ -56,7 +56,8 @@ import {
   SEO,
   SocialMediaManagement,
   WebDevelopment,
-  PaidAdvertising
+  PaidAdvertising,
+  medhatpasha
 } from "../assets";
 
 export const navigation = [
@@ -358,21 +359,21 @@ export const socials = [
 
 
 export const companyLogos = [
-  { name: "Abosayyah", icon: abosayyah },
-  { name: "Butterfly", icon: butterfly },
+  { name: "Abu Sayyah Restaurant", icon: abosayyah },
+  { name: "Butterfly Towers", icon: butterfly },
   { name: "Alsayyah 180", icon: alsayyah180 },
-  { name: "Abosayyah Express", icon: abosayyahexpress },
-  { name: "Bay Homes", icon: bayhomes },
-  { name: "Alsayyah 1", icon: alsayyah1 },
-  { name: "The Key Tower", icon: thekeytower },
-  { name: "Sahal Noom", icon: sahalnoom },
+  { name: "Abu Sayyah Express", icon: abosayyahexpress },
+  { name: "Bay Homes Real Estate", icon: bayhomes },
+  { name: "Midhat Pasha Cafe", icon: medhatpasha },
+  { name: "The Key", icon: thekeytower },
+  { name: "Sahelnom Restaurant", icon: sahalnoom },
   { name: "Alsayyah 2", icon: alsayyah2 },
-  { name: "Feddah", icon: feddah },
+  { name: "Bait Fedda", icon: feddah },
   { name: "Alsayyah 3", icon: alsayyah3 },
   { name: "Full Circle", icon: fullcrircle },
-  { name: "Althamara", icon: althamara },
-  { name: "Blue B", icon: blueb },
-  { name: "Estekana", icon: estekana },
+  { name: "Al Thamara", icon: althamara },
+  { name: "Blue Bay Real Estate", icon: blueb },
+  { name: "Estekana Cafe", icon: estekana },
   { name: "Park My Car", icon: parkmycar },
 ];
 

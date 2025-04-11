@@ -1,51 +1,53 @@
 /* eslint-disable react/no-unknown-property */
-import { Suspense, useEffect, useRef } from "react";
+import { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
+import { Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
 
-const Ball = ({ icon }) => {
-  const [decal] = useTexture([icon]);
+const LogoCard = ({ icon }) => {
+  const [texture] = useTexture([icon]);
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={2.35} />
-      <directionalLight />
-      <mesh castShadow receiveShadow scale={2.5}>
-        <icosahedronGeometry args={[1, 3]} />
-        <meshStandardMaterial color="#ffff" metalness={0.5}            // Higher metalness for a metallic look
-          roughness={0.2}            // Rough surface
-          emissive="#f0f0e9"         // Slight emissive color for a subtle glow
-          envMapIntensity={0.1}       />
-        <Decal position={[0, 0, 1]} rotation={[2 * Math.PI, 0, 6.25]} scale={1} map={decal} flatShading />
+    <Float speed={1.2} rotationIntensity={1} floatIntensity={1.3}>
+      <ambientLight intensity={1.5} />
+      <directionalLight position={[0, 0, 2]} intensity={1.2} />
+      <mesh scale={[2,3, 0.2]}>
+        <planeGeometry args={[3.5, 2]} />
+        <meshStandardMaterial
+          map={texture}
+          transparent
+          opacity={1}
+          metalness={0.1}
+          roughness={0.15}
+          emissive="#ffffff"
+          emissiveIntensity={0.05}
+        />
       </mesh>
     </Float>
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const LogoCanvas = ({ icon }) => {
   const canvasRef = useRef();
-
-  useEffect(() => {
-    if (!canvasRef.current) {
-      console.error("Canvas failed to mount.");
-    }
-  }, [canvasRef]);
 
   return (
     <Canvas
       ref={canvasRef}
-      frameloop="demand"
-      dpr={[2, 2]}
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
-      style={{ width: "100%", height: "100%" }}
+      style={{
+        width: "100%",
+        height: "100%",
+        borderRadius: "20px",
+        backgroundColor: "#f4f4f4",
+      }}
     >
-      <Suspense >
-        <OrbitControls enableZoom={false} />
-        <Ball icon={icon} />
+      <Suspense fallback={null}>
+        <OrbitControls enableZoom={false} enableRotate={false} />
+        <LogoCard icon={icon} />
       </Suspense>
       <Preload all />
     </Canvas>
   );
 };
 
-export default BallCanvas;
+export default LogoCanvas;

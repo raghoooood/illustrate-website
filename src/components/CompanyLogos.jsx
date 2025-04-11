@@ -41,7 +41,7 @@ const CompanyLogos = () => (
             className="flex flex-col items-center space-y-6 transition-transform duration-300 ease-in-out"
           >
             {/* Increased canvas size */}
-            <div className="h-56 w-56 sm:h-64 sm:w-64" title={logo.name} aria-label={logo.name}>
+            <div className="w-full max-w-3xl h-[300px] sm:h-[250px] mx-auto" title={logo.name} aria-label={logo.name}>
               <BallCanvas icon={logo.icon} />
             </div>
             {/* Enlarged and bold logo name */}

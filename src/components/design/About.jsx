@@ -3,27 +3,45 @@
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../../utils/motion';
 import { TypingText } from './cards';
-import { astro2 } from "../../assets";
+import { astro2, astro5 } from "../../assets";
 import Collaboration from '../Collaboration';
+import { BackgroundCircles } from './Hero';
 
 const About = () => (
-  <section className="relative z-10 py-12 px-6 max-w-[1800px] mx-auto flex flex-col items-center">
+  <section
+  crosses
+  crossesOffset="lg:translate-y-[5.25rem]"
+  customPaddings
+   className="relative z-10 py-12 px-6 max-w-[1800px] mx-auto flex flex-col items-center">
     
     {/* Gradient positioned absolutely below the astro image */}
     <div className="absolute inset-0 gradient-02 z-0" />
 
     {/* Image and Text container */}
+    <BackgroundCircles />
     <div className="relative z-10 w-full flex flex-col md:flex-row items-center">
+
       {/* Image Container */}
-      <div className="aspect-[50/50] overflow-hidden md:aspect-[688/590] lg:aspect-[1024/890] w-full md:w-1/2 flex-shrink-0">
-        <img
-          src={astro2}
-          className="w-full scale-[0.9] translate-y-[8%] md:scale-[0.75] md:-translate-y-[12%] lg:-translate-y-[19%]"
-          width={1024}
-          height={490}
-          alt="astro2"
-        />
-      </div>
+      <motion.div
+  variants={fadeIn('left', 'tween', 0.2, 1)}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.25 }}
+  className="aspect-[50/50] overflow-hidden md:aspect-[688/590] lg:aspect-[1024/890] w-full md:w-1/2 flex-shrink-0"
+>
+  <motion.img
+    src={astro5}
+    className="w-full scale-[0.9] translate-y-[8%] md:scale-[0.75] md:-translate-y-[12%] lg:-translate-y-[19%]"
+    width={1024}
+    height={490}
+    alt="astro5"
+    initial={{ opacity: 0, scale: 0.95 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8, ease: 'easeOut' }}
+  />
+
+</motion.div>
+
 
       {/* Text Container */}
       <motion.div

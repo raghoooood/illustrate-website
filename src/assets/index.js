@@ -91,12 +91,13 @@ import fullcrircle from './companies/fullcrircle.png'
 import parkmycar from './companies/parkmycar.png'
 import sahalnoom from './companies/sahalnoom.png'
 import thekeytower from './companies/thekeytower.png'
+import medhatpasha from './companies/medhatpasha.png'
 
 import astroHero from "./astroHero.png"
 import astro2 from './astro2.png'
 import astro3 from './astro3.jpg'
 import astro4 from './astro4.png'
-import astro5 from './astro5.jpg'
+import astro5 from './astro5.png'
 import astro6 from './astro6.jpg'
 import astro7 from './astro7.jpg'
 
@@ -113,6 +114,7 @@ import imad from './team/IMAD .jpg'
 import osama from './team/OSAMA .jpg'
 import nour from './team/NOUR .jpg'
 import motaz from './team/MOTAZ .jpg'
+import dareen from './team/dareen.jpg'
 import mohammad from './team/Mohamed_HosnyYassin.jpg'
 
 
@@ -141,6 +143,7 @@ export {
   osama,
   nour,
   motaz,
+  dareen,
   mohammad,
   planetBG1,
   planetBG2,
@@ -162,6 +165,7 @@ export {
   althamara,
   bayhomes,
   blueb,
+  medhatpasha,
   butterfly,
   estekana,
   feddah,

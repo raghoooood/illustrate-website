@@ -15,6 +15,7 @@ import {
   musab,
   waleedKhan,
   osama,
+  dareen,
 } from '../assets';
 import useMediaQuery from '../hooks/useMediaQuery';
 
@@ -24,12 +25,15 @@ const sectionVariants = {
 };
 
 const peopleData = [
-  { id: 1, image: samah, alt: 'Samah', name: 'Samah Faek', title: 'Project Manager', nickname: 'The Organizer', position: 'bottom-20 right-[90%]' },
-  { id: 3, image: motaz, alt: 'Motaz', name: 'Moataz Najjar', title: 'UI/UX Designer', nickname: 'Pixel Perfectionist', position: 'top-2/3 left-[47%]' },
-  { id: 4, image: lana, alt: 'Lana', name: 'Lana Alhennawi', title: 'Marketing Lead', nickname: 'The Voice', position: 'bottom-34 left-[28%]' },
-  { id: 5, image: imad, alt: 'Imad', name: 'Imad Halwany', title: 'QA Engineer', nickname: 'Bug Hunter', position: 'top-[6%] right-[25%]' },
-  { id: 7, image: musab, alt: 'Musab', name: 'Musab Hawari', title: 'DevOps', nickname: 'The Bridge', position: 'top-[60%] left-[14%]' },
-  { id: 9, image: osama, alt: 'Osama', name: 'Osama Diab', title: 'Backend Developer', nickname: 'Data Whisperer', position: 'top-[60%] left-[80%]' },
+  { id: 1, image: samah, alt: 'Samah', name: 'Samah Faek', title: 'Chief Executive Officer', nickname: 'The Organizer', position: 'bottom-20 right-[90%]' },
+  { id: 2, image: dareen, alt: 'DarineHarb', name: 'Darine Harb', title: 'Digital Marketing Executive & SEO Expert', nickname: 'The Organizer', position: 'bottom-52 left-32' },
+  { id: 3, image: motaz, alt: 'Motaz', name: 'Moataz Najjar', title: 'Content Creator & Script Writer', nickname: 'Pixel Perfectionist', position: 'top-2/3 left-[47%]' },
+  { id: 4, image: lana, alt: 'Lana', name: 'Lana Alhennawi', title: 'Digital Marketing Exexutive & Team Leader', nickname: 'The Voice', position: 'bottom-34 left-[28%]' },
+  { id: 5, image: imad, alt: 'Imad', name: 'Imad Halwany', title: 'Graphic Designer & 3D Artist', nickname: 'Bug Hunter', position: 'top-[6%] right-[37%]' },
+  { id: 6, image: nour, alt: 'NourKayyali', name: 'Nour Kayyali', title: 'Art Director & Actor', nickname: 'Bug Hunter', position: 'bottom-50 right-[1%]' },
+  { id: 7, image: musab, alt: 'Musab', name: 'Musab Hawari', title: 'Production Manager', nickname: 'The Bridge', position: 'top-[60%] left-[14%]' },
+  { id: 8, image: waleedKhan, alt: 'waleedKhan', name: 'Waleed Khan', title: 'Media Buyer', nickname: 'The Bridge', position: 'bottom-[15%] left-[65%]' },
+  { id: 9, image: osama, alt: 'Osama', name: 'Osama Diab', title: 'Graphic Designer', nickname: 'Data Whisperer', position: 'top-[60%] left-[80%]' },
 ];
 
 const World = () => {
@@ -128,7 +132,7 @@ const World = () => {
             <div className="mt-4 text-center">
               <h2 className="text-xl font-bold text-gray-800">{selectedPerson.name}</h2>
               <p className="text-sm text-gray-600 mt-1">{selectedPerson.title}</p>
-              <p className="text-sm italic text-gray-500 mt-1">"{selectedPerson.nickname}"</p>
+              {/* <p className="text-sm italic text-gray-500 mt-1">"{selectedPerson.nickname}"</p> */}
             </div>
           </div>
         </div>
