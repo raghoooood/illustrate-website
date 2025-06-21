@@ -1,33 +1,54 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Charset and Viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Illustrate Marketing AE | Digital Marketing Agency in UAE</title>
+    <!-- Title -->
+    <title>Illustrate Marketing AE | Creative Agency in UAE</title>
 
-  <!-- CSP with unsafe-eval (use ONLY in dev or if absolutely necessary in prod) -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' 'unsafe-eval';
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' data:;
-    font-src 'self';
-    connect-src 'self';
-  " />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/brainwave-symbol.svg"
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="./src/assets/brainwave-symbol.svg" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Illustrate Marketing is a UAE-based creative digital agency offering branding, web design, and social media services."
+    />
 
-  <!-- Meta Description -->
-  <meta name="description" content="Illustrate Marketing is a UAE-based digital marketing agency offering web design, branding, social media, and more. We help businesses grow online." />
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Illustrate Marketing AE" />
+    <meta
+      property="og:description"
+      content="A creative agency in the UAE delivering impactful digital experiences."
+    />
+    <meta property="og:image" content="https://www.illustratemarketing.ae/og-image.jpg" />
+    <meta property="og:url" content="https://www.illustratemarketing.ae/" />
+    <meta property="og:type" content="website" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Illustrate Marketing AE" />
-  <meta property="og:description" content="A creative digital marketing agency in the UAE. Your brand, beautifully told." />
-  <meta property="og:image" content="https://www.illustratemarketing.ae/your-image.jpg" />
-  <meta property="og:url" content="https://www.illustratemarketing.ae/" />
-  <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Illustrate Marketing AE" />
+    <meta
+      name="twitter:description"
+      content="A creative agency in the UAE delivering impactful digital experiences."
+    />
+    <meta name="twitter:image" content="https://www.illustratemarketing.ae/og-image.jpg" />
 
+    <!-- Optional: Canonical link -->
+    <link rel="canonical" href="https://www.illustratemarketing.ae/" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.illustratemarketing.ae/" />
-</head>
+    <!-- ✅ Optional: Content Security Policy (only use unsafe-eval if required by framework) -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';"> -->
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
