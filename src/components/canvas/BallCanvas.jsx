@@ -38,7 +38,7 @@ const LogoCanvas = ({ icon }) => {
         width: "100%",
         height: "100%",
         borderRadius: "20px",
-        backgroundColor: "#f4f4f4",
+        backgroundColor: "#0000",
       }}
     >
       <Suspense fallback={null}>
